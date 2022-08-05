@@ -1,1 +1,44 @@
-@import './node_modules/bootstrap/scss/bootstrap.scss';
+// bootstrap completo
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+//Llamo a otras funcionalidades
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+// xs media query
+@include media-breakpoint-only(xs){
+    body{
+        background-color: red;
+    }
+}
+
+@include media-breakpoint-only(sm){
+    body{
+        background-color: grey;
+    }
+}
+
+@include media-breakpoint-only(md){
+    body{
+        background-color: orange;
+    }
+}
+
+@include media-breakpoint-only(lg){
+    body{
+        background-color: blue;
+    }
+}
+
+@include media-breakpoint-only(xl){
+    body{
+        background-color: green;
+    }
+}
+
+@include media-breakpoint-only(xxl){
+    body{
+        background-color: violet;
+    }
+}
