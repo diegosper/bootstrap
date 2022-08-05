@@ -6,39 +6,51 @@
 @import "./node_modules/bootstrap/scss/variables";
 @import "./node_modules/bootstrap/scss/mixins";
 
-// xs media query
+.container-fluid{
+    flex-wrap: wrap;
+}
+
 @include media-breakpoint-only(xs) {
-    body {
+    .container-fluid {
         background-color: red;
     }
 }
-
 @include media-breakpoint-only(sm) {
-    body {
+    .container-fluid {
         background-color: grey;
     }
 }
-
 @include media-breakpoint-only(md) {
-    body {
+    .container-fluid {
         background-color: orange;
     }
 }
-
 @include media-breakpoint-only(lg) {
-    body {
+    .container-fluid {
         background-color: blue;
     }
 }
-
 @include media-breakpoint-only(xl) {
-    body {
+    .container-fluid {
         background-color: green;
     }
 }
-
 @include media-breakpoint-only(xxl) {
-    body {
+    .container-fluid {
         background-color: violet;
+    }
+}
+p{
+    color: white;
+    flex-wrap: wrap;
+}
+@include media-breakpoint-between(xs,lg){
+    body{
+        background-color: blueviolet;
+    }
+}
+@include media-breakpoint-between(lg,fluid){
+    body{
+        background-color: yellowgreen;
     }
 }
